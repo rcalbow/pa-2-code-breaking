@@ -12,12 +12,6 @@ execute:
 **NAMES:** Riley Calbow and Luis Cerrillos
 
 
-```{r}
-#| label: setup chunk
-library(tidyverse)
-
-```
-
 Today you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message using the `tidyverse`. First thing is to include the package in a setup chunk above!  
 
 ***This task is complex. It requires many different types of abilities. Everyone will be good at some of these abilities but nobody will be good at all of them. In order to solve this puzzle, you will need to use the skills of each member of your group.***
@@ -62,11 +56,16 @@ In your activity, each of the following R chunks will cause an error and / or do
 
 0. Add a `setup` code chunk to your activity that loads the `tidyverse` package and hides the code output.  
 
+```{r, echo = FALSE}
+#| label: setup chunk
+library(tidyverse)
+
+```
 
 1.  Create vectors containing the upper case letters, lower case letters, and some punctuation marks. add a label that indicate this code chunk creates the vectors of letters and punctuation.
 
 ```{r}
-#| label: create-vectors
+#| label: create-vectors-letters-and-punctuation
 
 lower_case <- c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
                 "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
