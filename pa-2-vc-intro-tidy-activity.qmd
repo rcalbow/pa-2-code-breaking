@@ -160,8 +160,13 @@ Next, carry out the following steps:
 10. Turn your vector of numbers into a matrix with 5 columns.
 
 ```{r}
-#| label: add-label-4
-#add comment here
+#| label: turn vector into a matrix with 5 columns
+# turns vector into matrix, specifies 5 columns and names them V1-5 and id
+code_matrix <- code_break |>
+  pull(step9) |> 
+  matrix(ncol = 5) |>
+  as_tibble(column_name = "V") |>
+  mutate(id = row_number())
 
   
 ```
