@@ -127,6 +127,14 @@ By altering this top secret set of numbers, you will be able to create a message
 #add comment here
 #there are several ways to do this, the way below doesn't overwrite any column so you "don't lose work"
 
+code_break <- top_secret |>
+  as_tibble() |>
+  mutate(step6 = top_secret + 14,
+         step7 = step6 * 18 - 257,
+         step8 = exp(step7),
+         step9 = step8^2)
+
+head(code_break)
 
 
 ```
