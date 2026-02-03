@@ -88,10 +88,12 @@ Using the above, we can complete the following 5 steps within a few lines of cod
 If you want to look at `my_symbols` click on it under the Environment Tab in the top right panel.  
 
 ```{r}
-#| label: add-label-1
-# add comment here
+#| label: create-one-long-vector
 
-
+my_symbols <- tibble(symbols = c(lower_case, 
+                                 upper_case, 
+                                 punctuation)) |> #combines into vector and names it my_symbols
+              mutate(num = row_number()) #creates dataframe where each symbol is assigned to a number
 ```
 
 
