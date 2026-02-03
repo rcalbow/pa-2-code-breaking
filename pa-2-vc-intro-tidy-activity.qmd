@@ -174,8 +174,8 @@ code_matrix <- code_break |>
 11. Separately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it "evens". That is, "evens" should contain 2, 4, 6, 8 ..., 382.
 
 ```{r}
-#| label: add-label-5
-#add comment here
+#| label: create vector with even numbers from 1 - 382
+# creates vector with evens of interest and names it evens
 evens <- seq(from = 2, to = 382, by = 2)
 ```
 
@@ -187,6 +187,8 @@ evens <- seq(from = 2, to = 382, by = 2)
 ```{r}
 #| label: add-label-6
 #add comment here
+code_vector <- code_matrix |>
+  
 
 ```
 
