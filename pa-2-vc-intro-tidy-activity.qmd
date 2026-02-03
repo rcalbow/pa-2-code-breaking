@@ -123,8 +123,8 @@ By altering this top secret set of numbers, you will be able to create a message
 9.  Square every number.
 
 ```{r}
-#| label: add-label-2
-#add comment here
+#| label: Altered the top secret set of numbers, prioritized using tibble functions
+#opted for the method that would allow for us to not overwrite and have access to the previous numbers in case of error
 #there are several ways to do this, the way below doesn't overwrite any column so you "don't lose work"
 
 code_break <- top_secret |>
@@ -145,9 +145,10 @@ head(code_break)
 
 ```{r}
 #| label: add-label-3
-#add comment here
+#Checking how many numbers are below 17
 
-
+code_break |>
+  summarize(total = sum(step9 <  17)) #using summarize function to get our total amount of numbers less than 17
 
 ```
 
