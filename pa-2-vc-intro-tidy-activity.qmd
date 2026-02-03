@@ -9,12 +9,12 @@ execute:
 ---
 
 
-**NAMES:** Add names here  
+**NAMES:** Riley Calbow and Luis Cerrillos
 
 
 ```{r}
-#| label: add-label-0
-
+#| label: setup chunk
+library(tidyverse)
 
 ```
 
